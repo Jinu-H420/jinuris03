@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.tetris-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    border: 2px solid white;
+    background-color: #222;
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nextPieceCanvas {
+    border: 2px solid white;
+    background-color: #222;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .tetris-container {
+        flex-direction: column;
+    }
+
+    canvas {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    #nextPieceCanvas {
+        width: 30vw;
+        height: 30vw;
+    }
+}
